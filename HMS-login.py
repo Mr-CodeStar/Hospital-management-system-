@@ -51,7 +51,7 @@ def register():
             messagebox.showerror('REGISTER','blank are not allowed ')
         else:
             messagebox.showinfo('REGISTER','register is complet successfully ')
-            if os.path.exists("file1.csv")==False:
+            if os.path.exists("Login.csv")==False:
                 f=open("Login.csv","w")
                 cwriter=csv.writer(f)
                 cwriter.writerow([UserName,password])
